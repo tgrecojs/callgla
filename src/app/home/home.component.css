@@ -1,0 +1,49 @@
+/*styles for home content only*/
+
+
+#flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    padding: 1em;
+}
+
+p {
+    width: 600px;
+}
+
+@media (max-width: 600px) {
+    p {
+        width: 100%;
+    }
+}
+
+p#modal-text {
+    width: 100%;
+}
+
+img {
+    max-height: 100px;
+}
+
+button {
+    background: transparent;
+    color: white;
+    padding: 1em;
+    margin: .5em;
+    transition: .5s all linear;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #f0f0f0;
+    color: #00000f;
+    border-radius: 10px;
+}
+
+.modal-header, .modal-body {
+    color: #000;
+}

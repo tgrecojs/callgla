@@ -1,0 +1,89 @@
+body {
+    background: #55004E;
+    color: #fff;
+}
+
+
+nav ul li {
+  color: black;
+}
+
+.row-centered {
+  text-align: center;
+}
+
+.logo-img {
+      max-width: 500px;
+    margin-top: 2em;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer > img {
+    width: 75px;
+}
+label {
+    color: #000;
+}
+
+
+h1,
+h2,
+h3,
+p,
+.panel-body {
+  
+    color: #fefefe;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+footer {
+    background: #000;
+    height: 70px;
+}
+
+body {
+    background-color: #55004E;
+}
+
+.hero-unit {
+    background: #BDAEC6;
+}
+
+.panel {
+    padding-bottom: 1rem;
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    text-align: left;
+    margin-right: -4px;
+}
+
+.logo-img {
+    max-width: 300px;
+}
+
+.lawyer-image {
+    padding-top: 2rem;
+    max-width: 300px;
+}
+
+.law-title {
+    font-family: 1.75em;
+}
+
+.footer-text {
+    color: #f0f0f0;
+}

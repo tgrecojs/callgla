@@ -1,0 +1,46 @@
+<div class="container">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="text-center">Greco Law Associates P.C. Contact Form</h3>
+  </div>
+    <div class="panel-body">
+      <div *ngIf="isSubmitted" id="success">
+        <h2>Your submission has been processed.</h2>
+      </div>
+      <form *ngIf="formView" [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+            <label for="name">
+        Your Name:
+    </label>
+            <input class="form-control" placeholder="John Doe" name="name" type="text" [formControl]="contactForm.controls['name']">
+            <p *ngIf="!name.valid && name.touched">
+              Name is required.
+            </p>
+            <label for="email">Email Address:</label>
+            <input class="form-control" placeholder="johndoe@hotmail.com" name="email" type="email" [formControl]="contactForm.controls['email']">
+            <p *ngIf="!email.valid && email.touched">
+              E-mail is required.
+            </p>
+            <label for="phoneNumber">Phone Number:</label>
+            <input class="form-control" placeholder="570-XXX-XXXX" name="phoneNumber" type="tel" [formControl]="contactForm.controls['phoneNumber']">
+            <label for="location">Where are you located?</label>
+            <input class="form-control" placeholder="Hawley, PA" name="location" [formControl]="contactForm.controls['location']">
+            <label for="reason">Reason for contact:</label>
+            <select class="form-control" name="reason" id="reason" [formControl]="contactForm.controls['reason']">
+            <option *ngFor="let r of reasons">
+                {{ r.reason }}
+            </option>
+        </select>
+            <label for="message">
+                    Additional Input:
+        </label>
+            <textarea class="form-control" placeholder=" Please include any additional input that will help us best answer your questions." name="message" id="message" cols="30" rows="10" [formControl]="contactForm.controls['message']" placeholder="Please provide a little bit more information regarding to why you're contact me today....'"></textarea>
+            <p *ngIf="!message.valid && message.touched">
+              Message must be great than 30 characters. Elaborate a little bit more about the topic :)
+            </p>
+        <div>
+          <button id="default"  class="btn btn-default" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

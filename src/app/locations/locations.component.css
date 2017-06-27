@@ -1,0 +1,9 @@
+.gmap-canvas {
+        width: 600px;
+    height: 400px;
+    border: 3px solid #55004e;
+    border-radius: 3px;
+}
+.panel-default {
+    margin-top: 20px;
+}

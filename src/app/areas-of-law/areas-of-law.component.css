@@ -1,0 +1,17 @@
+* {
+    color: #000;
+}
+.panel-heading {
+    background: #d0cfcf;
+    border: 1px solid;
+}
+
+.panel-default {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.panel-heading {
+    text-align: center;
+}

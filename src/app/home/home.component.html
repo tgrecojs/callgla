@@ -1,0 +1,47 @@
+<div id="flex-col">
+  <img [src]="scaleImg" alt="Scales Img">
+  <h3>Greco Law Associates P.C.</h3>
+  <p>Greco Law Associates is a Northeastern Pennsylvania based law firm, which concentrates its practice in areas of the law including business and corporate law, employment law, estate administration and tax planning, civil litigation, state and federal
+    taxation, real estate and municipal law. The current lawyer members of the firm represent over 60 years of experience. Carl J. Greco, the founder of Greco Law Associates P.C., has over 36 years of experience as a practicing lawyer in Northeastern
+    Pennsylvania, having been admitted to the practice of law in Pennsylvania in 1978. The aforementioned areas in which the firm practices include matters relating to general contract law, financing, as well as drafting.
+  </p>
+      <button data-toggle="modal" data-target="#myModal">Read More</button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">Over 25 years of proven experience.</h2>
+      </div>
+      <div class="modal-body">
+        <p id="modal-text">Carl J. Greco has received the highest peer review rating given by Martindale-Hubbell. Mr. Greco’s rating is AV. A peer review rating of AV shows that a lawyer has reached the height of professional excellence. It is a peer review rating given to those who have practiced law for many years and who are recognized for the highest levels of skill and integrity. Currently, for those lawyers who have received peer review ratings based upon the length of the time of their practice, all rated lawyers working at Greco Law Associates have received at least a BV peer review rating, an indication of exemplary reputation and well established practice.</p>
+     <img [src]="avRatingImg" alt="5 Star Martindale-Hubble AV Rating">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="flex-col">
+    <img [src]="gavelImg" alt="Gavel Img">
+    <h3>Areas of Law Practice</h3>
+    <p>We believe that excellence in the law requires knowledge and experience to represent our clients competently in all matters entrusted to us. Our incomparable work ethic and the many varied experiences in the areas of law in which we represent our
+      clients has given us that competence. Our lawyers have represented various parties and handled both transactional and litigation issues in the areas of the law we practice, thereby giving our lawyers the experience in a particular area of law enabling
+      us to tailor our client’s representation based upon a view of the entire spectrum of issues and resolutions applicable to a particular client’s case.
+    </p>
+    <button [routerLink]="['/areas-of-law']">View Our Areas of Law.</button>
+  </div>
+  <div id="flex-col">
+      <img [src]="emailImg" alt="Contact Us Image">
+    <h3>Contact Us Today!</h3>
+    <p>
+      There is no time like the present! We cannot predict when we will need the advice of a competent lawyer, and that we will need it promptly, without delay. If you or your family or friends are in need of competent experienced representation, please do
+      not hesitate to contact us by phone or by emailing to any one of our lawyers.
+    </p>
+    <button  [routerLink]="['/contact-us']">Contact us today!</button>
+  </div>
+
+  <div>

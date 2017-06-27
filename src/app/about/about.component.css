@@ -1,0 +1,27 @@
+div.lawyer-card {
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin: 1.75rem;
+}
+
+img {
+    max-height: 350px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+}
+
+  .details li h3 {
+          text-decoration: underline;
+  }
+
+  .laywer-name {
+      text-align: center;
+  }
+
+  .panel-default {
+      margin-left: 3em;
+      margin-right: 3em;
+      margin-top: 20px;
+  }

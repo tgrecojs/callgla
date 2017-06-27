@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="text-center hidden-sm hidden-md hidden-lg">
+ GLA P.C. Locations
+</h2>
+      <h2 class="text-center hidden-xs">
+	Greco Law Associates P.C. Locations
+</h2>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-8 hidden-xs">
+          <sebm-google-map class="gmap-canvas" [latitude]="lat" [longitude]="lng">
+            <sebm-google-map-marker [latitude]="lat" [longitude]="lng" [title]="scrantonOffice"></sebm-google-map-marker>
+            <sebm-google-map-marker [latitude]="latTwo" [longitude]="lngTwo" [title]="montroseOffice"></sebm-google-map-marker>
+          </sebm-google-map>
+          </div>
+        <div class="col-sm-4">
+          <h4 class="location-heading">Scranton Office:</h4>
+          <ul class="list-unstyled side-location-list">
+            <li>
+              <a href="http://bit.ly/gla-scranton-map" target="_blank">327 N. Washington Avenue</a>
+            </li>
+            <li>
+              <i id="ember624" aria-hidden="true" class="ember-view fa fa-phone"><!----></i> <a class="phone-number" href="tel:570-346-4434">570-346-4434</a>
+            </li>
+            <li><i id="ember625" aria-hidden="true" class="ember-view fa fa-fax"><!----></i> 570-346-4442</li>
+          </ul>
+          <h4 class="location-heading">Montrose Office:</h4>
+          <ul class="list-unstyled side-location-list">
+            <li>
+              <a href="http://bit.ly/gla-montrose-map" target="_blank">72 Public Avenue</a>
+            </li>
+            <li>
+              <i id="ember626" aria-hidden="true" class="ember-view fa fa-phone"><!----></i> <a class="phone-number" href="tel:570-533-3069">570-533-3069</a>
+            </li>
+            <li>
+              <i id="ember627" aria-hidden="true" class="ember-view fa fa-fax"><!----></i> 570-346-4442
+            </li>
+
+          </ul>
+          <button class="btn btn-default btn-lg">
+				<a id="ember628" href="/contact" class="ember-view">Get in contact today!</a>
+			</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
